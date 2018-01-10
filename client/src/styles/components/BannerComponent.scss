@@ -1,0 +1,57 @@
+/* Banner Component Styles
+===================================================================================================================== */
+
+.bannercomponent {
+  
+  overflow: hidden;
+  
+  .wrapper {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    
+    .slide {
+      
+      .slide-caption {
+        display: none;
+      }
+      
+    }
+    
+    &.animated {
+      transform: translate3d(0, 0, 0);
+    }
+    
+    &.scroll-left {
+      animation: bannerScrollLeft 10s infinite linear;
+    }
+    
+    &.scroll-right {
+      animation: bannerScrollRight 10s infinite linear;
+    }
+    
+  }
+  
+}
+
+// Define Scroll Left Key Frames:
+
+@keyframes bannerScrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+// Define Scroll Right Key Frames:
+
+@keyframes bannerScrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

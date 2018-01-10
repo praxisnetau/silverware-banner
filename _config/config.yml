@@ -1,0 +1,11 @@
+---
+Name: silverware-banner
+---
+
+# Configure Content Controller:
+
+SilverStripe\CMS\Controllers\ContentController:
+  required_js:
+    - "silverware/banner: client/dist/js/bundle.js"
+  required_css:
+    - "silverware/banner: client/dist/styles/bundle.css"

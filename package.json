@@ -1,0 +1,72 @@
+{
+  "name": "silverware-banner",
+  "version": "1.0.0",
+  "description": "SilverWare Banner Module.",
+  "homepage": "https://github.com/praxisnetau/silverware-banner",
+  "keywords": [
+    "silverware",
+    "banner",
+    "silverstripe"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Praxis Interactive",
+  "contributors": [
+    {
+      "name": "Colin Tucker",
+      "email": "colin@praxis.net.au",
+      "url": "https://www.praxis.net.au"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praxisnetau/silverware-banner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/praxisnetau/silverware-banner/issues"
+  },
+  "engines": {
+    "node": "^6.x"
+  },
+  "scripts": {
+    "watch": "webpack --env.development --colors --watch",
+    "build": "webpack --env.production --colors --progress --optimize-minimize"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "svgo": "^1.0.3",
+    "svgo-loader": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
