@@ -1,4 +1,4 @@
-/* Webpack Configuration:
+/* Webpack Configuration
 ===================================================================================================================== */
 
 // Load Core:
@@ -15,7 +15,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Define Base:
 
-const BASE = '/resources/silverware/banner';
+const BASE = '/resources/vendor/silverware/banner';
 
 // Define Paths:
 
